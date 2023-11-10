@@ -1,0 +1,70 @@
+site_name: mktest
+
+#repo_name: 'repo_name'
+#repo_url: 'http://repo_url'
+#site_url: 'http://site_url'
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - navigation.path
+    #- toc.follow
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - navigation.top
+    
+  font:
+    #text: Noto Sans JP
+    #text: Raleway
+    #text: Lato
+    #text: Shadows Into Light
+    ###text: PT Sans Narrow
+    text: Mynerve
+    #text: Patrick Hand
+    #code: Mynerve
+    ###code: Noto Sans Mono
+    ##text: Neucha
+    #text: Dekko
+    #code: Open Sans Light
+    #code: Droid Sans Light
+    #code: Noto Sans Light
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  icon:
+    - admonition:
+      <type>: <icon>
+
+markdown_extensions:
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # Annotations
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  # Code blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
