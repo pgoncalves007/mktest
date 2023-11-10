@@ -1,8 +1,8 @@
 site_name: mktest
 
-#repo_name: 'repo_name'
-#repo_url: 'http://repo_url'
-#site_url: 'http://site_url'
+repo_name: 'mktest'
+repo_url: 'https://github.com/pgoncalves007/mktest'
+site_url: 'https://pgoncalves007.github.io/mktest/'
 
 theme:
   name: material
