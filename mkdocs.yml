@@ -1,8 +1,9 @@
 site_name: mktest
 
-repo_name: 'mktest'
+repo_name: 'pgoncalves007/mktest'
 repo_url: 'https://github.com/pgoncalves007/mktest'
 site_url: 'https://pgoncalves007.github.io/mktest/'
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -15,6 +16,10 @@ theme:
     - content.code.select
     - content.code.annotate
     - navigation.top
+    - content.action.edit
+    - content.action.view
+    - search.highlight
+    - search.share
     
   font:
     #text: Noto Sans JP
@@ -37,19 +42,23 @@ theme:
       primary: teal
       accent: teal
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
       primary: teal
       accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
 
   icon:
-    - admonition:
-      <type>: <icon>
+    repo: fontawesome/brands/github
+    #edit: material/pencil
+    #oview: material/eye
+  #icon:
+  #  - admonition:
+  #    <type>: <icon>
 
 markdown_extensions:
   # Admonitions
@@ -68,3 +77,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+plugins:
+  - search
+  #- typeset
+  - blog
